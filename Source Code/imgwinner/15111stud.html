@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>student form</title>
+<script language="javascript">
+function ver()
+{
+if(form1.elements[13].name=="buttonreg")
+{
+if(document.form1.text1.value==""||document.form1.text2.value==""||document.form1.textarea1.value==""||document.form1.text3.value==""||document.form1.text4.value=="")
+alert('student info is not registered');
+else 
+alert('student info is registered');
+}
+}
+</script>
+</head>
+<body>
+<center>
+<form name="form1">
+student registration<br/>
+name:<input name="text1" type="text" value=""/><br/>
+D.O.B:<input name="text2" type="text" value=""/><br/>
+Address:<input name="textarea1" type="textarea" value=""/><br/>
+Gender:<input name="radio1" type="radio"/>Female
+<input name="radio1" type="radio"/>Male<br/>
+Marks in P.U.C<input name="text3" type="text" value=""/><br/>
+Year of passing:<input name="text4" type="text" value=""/><br/>
+course selected:<select name="course" size="1"><br/>
+<option selected>BCA</option>
+<option>Bcom
+<option>BA
+<option>BBm
+</select><br/>
+Extra Curricular Activities:<input name="check1" type="checkbox" value="<yes/no>"checked>NSS<br/>
+<input name="check2" type="checkbox" value=""/>NCC<br/>
+<input name="check3" type="checkbox" value=""/>RR<br/>
+<input name="check4" type="checkbox" value=""/>ECA<br/>
+<input name="buttonreg" type="button" onClick="ver()" value="Register"/><br/>
+<input name="reset" type="reset" value="reset form"/><br/>
+</center>
+</form>
+</body>
+</html>
